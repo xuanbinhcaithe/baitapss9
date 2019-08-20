@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>làm việc với đối tượng String</title>
+</head>
+<body>
+    <script>
+        //đếm số lần xuất hiện của ký tự 'a' trong chuỗi sau
+        let str="tôi yêu ngôn ngữ lập trình javascript";
+        let count=0;
+        for (let i=0;i<str.length;i++) {
+            if (str[i]==='a'){
+                count++;
+            }
+        }
+        console.log(count);
+
+        //tách chuỗi
+
+        let array=str.split(' ');
+        console.log(array);
+        console.log(array.length);
+
+        // đếm số  lượng các ký tự trong chuỗi trên;
+        let abc=array.join('');
+        console.log(abc);
+        console.log(abc.length);
+
+        //Hãy thay thế chữ 'Javascript' bằng chữ 'Typescript'
+
+        let newString=str.replace('javascript','Typescript');
+        console.log(newString);
+
+    </script>
+</body>
+</html>
